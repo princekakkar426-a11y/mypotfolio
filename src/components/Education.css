@@ -1,0 +1,66 @@
+.timeline {
+  position: relative;
+  max-width: 720px;
+  margin-inline: auto;
+  padding-left: var(--space-lg);
+}
+
+.timeline-line {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--secondary), var(--accent));
+  opacity: 0.4;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-md);
+}
+
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: calc(-1 * var(--space-lg) + 2px);
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  box-shadow: 0 0 0 4px rgba(79, 140, 255, 0.15), var(--glow-primary);
+}
+
+.timeline-card {
+  padding: var(--space-md);
+  transition: transform var(--dur-fast) var(--ease-out), border-color var(--dur-fast);
+}
+
+.timeline-card:hover {
+  transform: translateX(6px);
+  border-color: var(--primary);
+}
+
+.timeline-period {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--accent);
+}
+
+.timeline-degree {
+  font-size: 1.15rem;
+  margin-block: 0.3em;
+}
+
+.timeline-school {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+}
+
+.timeline-detail {
+  color: var(--text-dim);
+  font-size: 0.88rem;
+}

@@ -1,0 +1,57 @@
+.testimonial-slider {
+  max-width: 680px;
+  margin-inline: auto;
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.testimonial-quote {
+  font-size: 1.15rem;
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: var(--space-md);
+  min-height: 4.5em;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+  margin-bottom: var(--space-md);
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--gradient-primary);
+  font-weight: 700;
+  color: #fff;
+}
+
+.testimonial-name { font-size: 0.92rem; }
+.testimonial-role { font-size: 0.8rem; color: var(--text-dim); }
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.testimonial-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--glass-border);
+  transition: all var(--dur-fast);
+}
+
+.testimonial-dot.is-active {
+  width: 22px;
+  border-radius: var(--radius-pill);
+  background: var(--gradient-accent);
+}

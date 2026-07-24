@@ -1,0 +1,33 @@
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--gradient-primary);
+  color: #fff;
+  font-size: 1.1rem;
+  box-shadow: var(--glow-primary);
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity var(--dur-fast), visibility var(--dur-fast), transform var(--dur-fast) var(--ease-out);
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+  .back-to-top { bottom: 18px; right: 18px; width: 42px; height: 42px; }
+}

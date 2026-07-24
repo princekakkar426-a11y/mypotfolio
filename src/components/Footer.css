@@ -1,0 +1,25 @@
+.footer {
+  border-top: 1px solid var(--glass-border);
+  padding-block: var(--space-md);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.footer-heart {
+  display: inline-block;
+  animation: heartbeat 1.4s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.25); }
+  50% { transform: scale(1); }
+}

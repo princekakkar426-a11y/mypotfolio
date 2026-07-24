@@ -1,0 +1,25 @@
+.soft-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.soft-skill-card {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  padding: 1em 1.6em;
+  font-size: 0.95rem;
+  transition: transform var(--dur-fast) var(--ease-out), border-color var(--dur-fast), box-shadow var(--dur-fast);
+}
+
+.soft-skill-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: var(--secondary);
+  box-shadow: 0 12px 30px rgba(123, 97, 255, 0.25);
+}
+
+.soft-skill-icon {
+  font-size: 1.3rem;
+}
