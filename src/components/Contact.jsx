@@ -3,7 +3,7 @@ import Reveal from './Reveal';
 import MagneticButton from './MagneticButton';
 import { profile } from '../data/content';
 import './Contact.css';
-import resume from "../data/resume.pdf";
+import resume from "../data/Resume.pdf";
 
 
 const INITIAL = { name: '', email: '', message: '' };
